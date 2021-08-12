@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace QuickSort
 {
+    /// <summary>
+    /// 快速排序
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -35,6 +38,7 @@ namespace QuickSort
         /// <param name="l">待排序区间起始坐标</param>
         /// <param name="r">待排序区间结束坐标</param>
         /// <param name="n">数组元素的数量</param>
+        //[Benchmark]
         private static void QuickSort(IList<int> arr, int l, int r, int n)
         {
             // 递归的边界条件是区间中只有一个元素
@@ -67,7 +71,7 @@ namespace QuickSort
         /// </summary>
         /// <param name="arr">排序数组</param>
         /// <param name="l">待排序区间起始坐标</param>
-        /// <param name="x">记录从前向后扫描的位置</param>
+        /// <param name="x">记录从前向后扫描的位置</param> 
         /// <param name="r">待排序区间结束坐标</param>
         /// <param name="n">数组元素的数量</param>
         private static void Output(IList<int> arr, int l, int x, int r, int n)
