@@ -74,7 +74,7 @@ namespace QuickSortOptimize.CSharp
                     while (arr[y] > z) --y;
                     if (x <= y)
                     {
-                        // partition 操作优化
+                        // partition 操作（分割操作）优化
                         arr[x] = arr[x] ^ arr[y];
                         arr[y] = arr[x] ^ arr[y];
                         arr[x] = arr[x] ^ arr[y];
