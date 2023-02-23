@@ -1,9 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-int n = 0;
-int[] a = new int[100];
 Console.WriteLine("请输入元素数量:");
-n = Convert.ToInt32(Console.ReadLine());
+int[] a = new int[100];
+int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"\n请输入 {n} 个元素的值:");
 for (int i = 0; i < n; i++)
 {
@@ -23,7 +22,7 @@ for (int i = 1; i <= n; i++)
 /// <param name="l">待查找区间起始坐标</param>
 /// <param name="r">待查找区间结束坐标</param>
 /// <param name="k">待查找元素的排名</param>
-int QuickSelect(int[] arr, int l, int r, int k)
+static int QuickSelect(int[] arr, int l, int r, int k)
 {
     // 首先选取基准值，完成 partition 操作
     int x = l, y = r, z = arr[l];
